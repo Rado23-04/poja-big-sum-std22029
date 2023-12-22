@@ -1,0 +1,10 @@
+config:
+  target: "https://vb2fucger2.execute-api.eu-west-3.amazonaws.com/Prod"
+  phases:
+    - duration: 60
+      arrivalRate: 600
+
+scenarios:
+  - flow:
+      - get:
+          url: "/Prod/ping"
