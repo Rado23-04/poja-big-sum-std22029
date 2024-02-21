@@ -2,6 +2,7 @@ package com.poja.bigsum.endpoint.rest.controller.health;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -11,7 +12,7 @@ import java.net.MalformedURLException;
 import java.awt.Color;
 
 import java.net.URL;
-
+@RestController
 public class image {
     @GetMapping("/noir-blanc")
     @ResponseBody
